@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cj's website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: left; margin-bottom: 10px;">
+            <button class="button" style="padding: 3px 8px;" onclick="openModal()">
+                <img src="images/pack1/cog.png" alt="ayarlar" style="vertical-align: middle;"> Settings
+            </button>
+        </div>
+
+        <div id="settingsModal" class="modal">
+            <div class="modal-title">
+                Settings
+                <span class="close-button" onclick="closeModal()">X</span>
+            </div>
+            <div class="settings-section">
+                <button class="settings-button" onclick="showThemes()">
+                    <img src="images/pack1/palette.png" alt="themes"> Themes
+                </button>
+                <button class="settings-button" onclick="showLanguages()">
+                    <img src="images/pack1/world.png" alt="languages"> Languages
+                </button>
+            </div>
+            
+            <div id="themesPanel" class="panel" style="display: none;">
+                <div onclick="setTheme('default')" class="theme-option">
+                    <img src="images/pack1/bullet_pink.png" alt="bullet"> Default Theme
+                </div>
+                <div onclick="setTheme('fresh')" class="theme-option">
+                    <img src="images/pack1/bullet_blue.png" alt="bullet"> Fresh Theme
+                </div>
+                <div onclick="setTheme('night')" class="theme-option">
+                    <img src="images/pack1/bullet_purple.png" alt="bullet"> Night Theme
+                </div>
+                <div onclick="setTheme('sunset')" class="theme-option">
+                    <img src="images/pack1/bullet_orange.png" alt="bullet"> Sunset Theme
+                </div>
+                <div onclick="setTheme('forest')" class="theme-option">
+                    <img src="images/pack1/bullet_green.png" alt="bullet"> Forest Theme
+                </div>
+                <div onclick="setTheme('horror')" class="theme-option">
+                    <img src="images/pack1/bullet_red.png" alt="bullet"> Cherry Juice Theme
+                </div>
+                <div onclick="setTheme('glitch')" class="theme-option">
+                    <img src="images/pack1/bullet_black.png" alt="bullet"> Glitch Theme
+                </div>
+            </div>
+        
+            <div id="languagesPanel" class="panel" style="display: none;">
+                <div onclick="setLanguage('it')" class="theme-option">
+                    <img src="images/lang/flag_it.png" alt="Italian"> Italiano
+                </div>
+                <div onclick="setLanguage('en')" class="theme-option">
+                    <img src="images/lang/flag_en.png" alt="English"> English
+                </div>
+                <div onclick="setLanguage('tr')" class="theme-option">
+                    <img src="images/lang/flag_tr.png" alt="Turkish"> Türkçe
+                </div>
+                <div onclick="setLanguage('es')" class="theme-option">
+                    <img src="images/lang/flag_es.png" alt="Spanish"> Español
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <h1 class="blink">cj's silly ass website</h1>
+            
+            <marquee class="marquee" scrollamount="10">
+                --- last update: 10.01.2025!!! • welcome to my silly website! • i love salmon • ssdddhjdekvrkf sorry cat was on keybord • thanks for being here ---
+            </marquee>
+
+            <table class="nav-table">
+                <tr>
+                    <td align="center">
+                        <button class="button"><img src="images/pack1/house.png" alt="ev">Main Page</button>
+                        <button class="button"><img src="images/pack1/link.png" alt="link">Links</button>
+                        <button class="button"><img src="images/pack1/bricks.png" alt="skills">Skills</button>
+                        <button class="button"><img src="images/pack1/photo.png" alt="kamera">Gallery</button>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="content-table">
+                <tr>
+                    <td width="30%" bgcolor="#FFE4E1">
+                        <img src="images/profile.png" alt="Profil resmi" style="border: 3px solid #FF1493"/>
+                    <td width="70%">
+
+                        <h2 class="rainbow-text">welcome</h2>
+                        <p class="aboutme-desc">hello! i'm cyberjoke (or cj for short). i'm an aspiring artist and lua programmer with some experience in c++. (GMT +1 or GMT +2) <img src="images/pack1/emoticon_waii.png" alt="waii" style="vertical-align: middle;"></p>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="link-table">
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <h2 class="rainbow-text">links</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="https://discord.gg/jFB5YEbf" class="button" target="_blank">
+                            <img src="images/pack1/comments.png" alt="bullet"> discord
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCcmjiaIIJLtN7uVdSJJEjPA" class="button" target="_blank">
+                            <img src="images/pack1/film.png" alt="bullet"> youtube
+                        </a>
+                        <a href="https://www.roblox.com/tr/users/1356901702/profile" class="button" target="_blank">
+                            <img src="images/pack1/controller.png" alt="bullet"> roblox
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="skills-table">
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <h2 class="rainbow-text">skills</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <div class="skill-category">
+                            <h3>programming</h3>
+                            <div class="skill-item">
+                                <span>lua</span>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="height: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>c++</span>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="height: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="50%">
+                        <div class="skill-category">
+                            <h3>art & design</h3>
+                            <div class="skill-item">
+                                <span>pixel art</span>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="height: 45%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>digital art</span>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="height: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="gallery-table">
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <h2 class="rainbow-text">gallery</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/gallery/1.png" alt="artwork1" class="gallery-img">
+                    </td>
+                    <td>
+                        <img src="images/gallery/2.png" alt="artwork2" class="gallery-img">
+                    </td>
+                    <td>
+                        <img src="images/gallery/3.png" alt="artwork3" class="gallery-img">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/gallery/4.png" alt="artwork4" class="gallery-img">
+                    </td>
+                    <td>
+                        <img src="images/gallery/5.png" alt="artwork5" class="gallery-img">
+                    </td>
+                    <td>
+                        <img src="images/gallery/6.png" alt="artwork6" class="gallery-img">
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="nav-credits">
+                <div class="footer-text">thanks for visiting my website!</div>
+                <div class="footer-credit">THIS WEBSITE IS MADE BY cj's LIL FRIEND:
+            </div>
+            <div class="retro-footer">
+                <img src="images/credits/ascaped_line.gif" alt="line" class="line-gif">
+                <a href="https://ascaped.github.io/aboutme/" target="_blank">
+                    <img src="images/credits/ascaped.gif" alt="ascaped" class="ascaped-gif">
+                </a>
+                <img src="images/credits/ascaped_line.gif" alt="line" class="line-gif">
+            </div>
+            </div>
+        </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
